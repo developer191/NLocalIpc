@@ -1,0 +1,1 @@
+for /d /r . %%d in (bin,obj,_ReSharper.Services,suo,TestResults) do @if exist "%%d" rd /s/q "%%d"

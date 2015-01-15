@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C858208-3CAE-4758-AE0E-084176C125FB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Topshelf.Services.AcceptanceTests</RootNamespace>
+    <AssemblyName>Topshelf.Services.AcceptanceTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\build\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\..\lib\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\..\..\lib\Testing\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\..\..\lib\SpecFlow\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\DaemonDiscoversAgentsInAssemblies.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DaemonDiscoversAgentsInAssemblies.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ProvidesEventAggregationInterfaces.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProvidesEventAggregationInterfaces.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SeamlessAndRobustUsageExperience.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SeamlessAndRobustUsageExperience.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EasyAndFlexibleConfiguration.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EasyAndFlexibleConfiguration.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\TransportFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransportFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\DaemonDiscoversAgentsInAssemblies.steps.cs" />
+    <Compile Include="Steps\EasyAndFlexibleConfiguration.steps.cs" />
+    <Compile Include="Steps\TransportFeature.steps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Hosting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Events\Tranport.events.cs" />
+    <None Include="Features\DaemonDiscoversAgentsInAssemblies.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DaemonDiscoversAgentsInAssemblies.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\ProvidesEventAggregationInterfaces.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ProvidesEventAggregationInterfaces.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\SeamlessAndRobustUsageExperience.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SeamlessAndRobustUsageExperience.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\EasyAndFlexibleConfiguration.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>EasyAndFlexibleConfiguration.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\TransportFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TransportFeature.feature.cs</LastGenOutput>
+    </None>
+    <Content Include="Topshelf.Services.Events.Agent.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleValidService.Agent.dll.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Topshelf.Services.Authentication.Agent.dll.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\ServiceModelEx\ServiceModelEx.csproj">
+      <Project>{0858C710-AF53-4049-B98E-CFE3638D1228}</Project>
+      <Name>ServiceModelEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleEvents\SampleEvents.csproj">
+      <Project>{C7B24C10-1DC8-4BD4-AD9B-A73B6B4426EF}</Project>
+      <Name>SampleEvents</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleValidService.Agent\SampleValidService.Agent.csproj">
+      <Project>{BD20C610-01DD-48EC-96F4-5A3A1A1E688E}</Project>
+      <Name>SampleValidService.Agent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleValidService.Client\SampleValidService.Client.csproj">
+      <Project>{E07FF00A-1320-4FE9-8BB6-090557CD78C0}</Project>
+      <Name>SampleValidService.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SampleValidService.Common\SampleValidService.Common.csproj">
+      <Project>{FC40F14F-8090-4A18-8F4B-E5EFF2F84FD1}</Project>
+      <Name>SampleValidService.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Topshelf.Services.Common\Topshelf.Services.Common.csproj">
+      <Project>{175CCC67-AAD1-49E7-8313-5ED853573BD0}</Project>
+      <Name>Topshelf.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Topshelf.Services.Core\Topshelf.Services.Core.csproj">
+      <Project>{C20DD05D-38FE-40E2-BA82-1EA59B7E5381}</Project>
+      <Name>Topshelf.Services.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Topshelf.Services.Events.Client\Topshelf.Services.Events.Client.csproj">
+      <Project>{E50888C7-FC97-4066-9346-4135F1BCB86E}</Project>
+      <Name>Topshelf.Services.Events.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Topshelf.Services.Events.Common\Topshelf.Services.Events.Common.csproj">
+      <Project>{3318342E-F164-4172-A0E4-5443D16C98B7}</Project>
+      <Name>Topshelf.Services.Events.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
