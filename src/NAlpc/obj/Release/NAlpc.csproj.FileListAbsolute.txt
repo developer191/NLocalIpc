@@ -1,0 +1,10 @@
+i:\src\NDceRpc\src\NAlpc\bin\Release\NAlpc.dll
+i:\src\NDceRpc\src\NAlpc\bin\Release\NAlpc.pdb
+i:\src\NDceRpc\src\NAlpc\bin\Release\NAlpc.XML
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.dll
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.pdb
+i:\src\NLocalIpc\src\NAlpc\bin\Release\NAlpc.dll
+i:\src\NLocalIpc\src\NAlpc\bin\Release\NAlpc.pdb
+i:\src\NLocalIpc\src\NAlpc\bin\Release\NAlpc.XML
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.dll
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.pdb

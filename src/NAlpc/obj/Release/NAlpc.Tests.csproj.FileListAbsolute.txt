@@ -1,0 +1,10 @@
+i:\src\NDceRpc\build\Release\NAlpc.Tests.dll
+i:\src\NDceRpc\build\Release\NAlpc.Tests.pdb
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.Tests.csprojResolveAssemblyReference.cache
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.Tests.dll
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.Tests.pdb
+i:\src\NLocalIpc\build\Release\NAlpc.Tests.dll
+i:\src\NLocalIpc\build\Release\NAlpc.Tests.pdb
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.Tests.csprojResolveAssemblyReference.cache
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.Tests.dll
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.Tests.pdb

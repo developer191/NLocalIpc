@@ -1,0 +1,14 @@
+H:\src\NDceRpc\build\NET35\Release\NAlpc.XML
+H:\src\NDceRpc\build\NET35\Release\NAlpc.dll
+H:\src\NDceRpc\build\NET35\Release\NAlpc.pdb
+H:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.dll
+H:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.pdb
+i:\src\NDceRpc\build\NET35\Release\NAlpc.dll
+i:\src\NDceRpc\build\NET35\Release\NAlpc.pdb
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.dll
+i:\src\NDceRpc\src\NAlpc\obj\Release\NAlpc.pdb
+i:\src\NLocalIpc\build\NET35\Release\NAlpc.XML
+i:\src\NLocalIpc\build\NET35\Release\NAlpc.dll
+i:\src\NLocalIpc\build\NET35\Release\NAlpc.pdb
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.dll
+i:\src\NLocalIpc\src\NAlpc\obj\Release\NAlpc.pdb

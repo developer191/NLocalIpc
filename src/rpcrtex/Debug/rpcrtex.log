@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  dllmain.cpp
+  rpcrtex.cpp
+     Creating library I:\src\NLocalIpc\src\..\build\Debug\rpcrtex.lib and object I:\src\NLocalIpc\src\..\build\Debug\rpcrtex.exp
+     Creating library I:\src\NLocalIpc\src\..\build\Debug\rpcrtex.lib and object I:\src\NLocalIpc\src\..\build\Debug\rpcrtex.exp
+  rpcrtex.vcxproj -> I:\src\NLocalIpc\src\..\build\Debug\rpcrtex.dll

@@ -1,0 +1,12 @@
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\MainWindow.baml
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\MainWindow.g.cs
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App.g.cs
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App1_MarkupCompile.cache
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App1.g.resources
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App1.Properties.Resources.resources
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\clr-inter-process-events-app.csproj.GenerateResource.Cache
+i:\src\clr\clr-inter-process-events-app\bin\Debug\App1.exe.config
+i:\src\clr\clr-inter-process-events-app\bin\Debug\App1.exe
+i:\src\clr\clr-inter-process-events-app\bin\Debug\App1.pdb
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App1.exe
+i:\src\clr\clr-inter-process-events-app\obj\x86\Debug\App1.pdb

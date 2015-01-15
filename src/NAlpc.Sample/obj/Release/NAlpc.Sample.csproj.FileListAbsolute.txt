@@ -1,0 +1,11 @@
+i:\src\NDceRpc\build\Release\NAlpc.Sample.exe.config
+i:\src\NDceRpc\build\Release\NAlpc.Sample.exe
+i:\src\NDceRpc\build\Release\NAlpc.Sample.pdb
+i:\src\NDceRpc\src\NAlpc.Sample\obj\Release\NAlpc.Sample.exe
+i:\src\NDceRpc\src\NAlpc.Sample\obj\Release\NAlpc.Sample.pdb
+i:\src\NLocalIpc\build\Release\NAlpc.Sample.exe.config
+i:\src\NLocalIpc\build\Release\NAlpc.Sample.exe
+i:\src\NLocalIpc\build\Release\NAlpc.Sample.pdb
+i:\src\NLocalIpc\src\NAlpc.Sample\obj\Release\NAlpc.Sample.csprojResolveAssemblyReference.cache
+i:\src\NLocalIpc\src\NAlpc.Sample\obj\Release\NAlpc.Sample.exe
+i:\src\NLocalIpc\src\NAlpc.Sample\obj\Release\NAlpc.Sample.pdb

@@ -1,0 +1,213 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Basic.CLI, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Basic.Gen, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=None, flags=None
+Interface ICppInstance: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, BeforeFieldInit
+  Properties:
+    IntPtr Instance 'get set' : 
+  Methods:
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Basic.Foo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Foo*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    Single B   'get set' : 
+    Int32 A    'get set' : 
+    IntPtr Instance 'get set' : 
+    Foo* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Foo*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_A(): PrivateScope, Public, HideBySig, SpecialName
+    set_A(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_B(): PrivateScope, Public, HideBySig, SpecialName
+    set_B(Single): PrivateScope, Public, HideBySig, SpecialName
+    GetANSI(): PrivateScope, Public, HideBySig
+Class Basic.Foo2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Basic.Foo
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Foo2*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 C    'get set' : 
+  Methods:
+    get_C(): PrivateScope, Public, HideBySig, SpecialName
+    set_C(Int32): PrivateScope, Public, HideBySig, SpecialName
+    op_LeftShift(Foo2, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Basic.Bar: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Bar*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 A : Public
+    Single B : Public
+  Methods:
+    RetItem1(): PrivateScope, Public, HideBySig
+    op_UnaryNegation(Bar): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Bar, Bar): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Basic.Bar+Item: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Item Item1 = 0 : Public, Static, Literal, HasDefault
+    Item Item2 = 1 : Public, Static, Literal, HasDefault
+Struct Basic.Bar2: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Bar2*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 A : Public
+    Single B : Public
+    Int32 C : Public
+Class Basic.Hello: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Hello*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    Hello* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Hello*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    PrintHello(String): PrivateScope, Public, HideBySig
+    test1(Int32, Single): PrivateScope, Public, HideBySig
+    add(Int32, Int32): PrivateScope, Public, HideBySig
+    AddFoo(Foo): PrivateScope, Public, HideBySig
+    AddFooRef(Foo): PrivateScope, Public, HideBySig
+    AddFooPtr(Foo): PrivateScope, Public, HideBySig
+    RetFoo(Int32, Single): PrivateScope, Public, HideBySig
+    AddFoo2(Foo2): PrivateScope, Public, HideBySig
+    AddBar(Bar): PrivateScope, Public, HideBySig
+    AddBar2(Bar2): PrivateScope, Public, HideBySig
+    RetEnum(Enum): PrivateScope, Public, HideBySig
+    RetNull(): PrivateScope, Public, HideBySig
+    TestPrimitiveOut(Single&(Out)): PrivateScope, Public, HideBySig
+    TestPrimitiveOutRef(Single&(Out)): PrivateScope, Public, HideBySig
+Struct Basic.Hello+NestedPublic: AutoLayout, AnsiClass, Class, NestedPublic, ExplicitLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(NestedPublic*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 j : Public
+    Single g : Public
+Class Basic.AbstractFoo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(AbstractFoo*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    AbstractFoo* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(AbstractFoo*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    pureFunction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    pureFunction1(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    pureFunction2(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Basic.ImplementsAbstractFoo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Basic.AbstractFoo
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ImplementsAbstractFoo*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    pureFunction(): PrivateScope, Public, Virtual, HideBySig
+    pureFunction1(): PrivateScope, Public, Virtual, HideBySig
+    pureFunction2(): PrivateScope, Public, Virtual, HideBySig
+Class Basic.ReturnsAbstractFoo: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(ReturnsAbstractFoo*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    ReturnsAbstractFoo* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(ReturnsAbstractFoo*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    getFoo(): PrivateScope, Public, HideBySig
+Class Basic.Exception: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Exception*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    Exception* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Exception*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    clone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class Basic.DerivedException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Basic.Exception
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DerivedException*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    clone(): PrivateScope, Public, Virtual, HideBySig
+Class Basic.DefaultParameters: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(DefaultParameters*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    DefaultParameters* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(DefaultParameters*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Foo(Int32, Int32): PrivateScope, Public, HideBySig
+    Bar(): PrivateScope, Public, HideBySig
+Class Basic.Derived: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Derived*): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ICppInstance
+  Properties:
+    IntPtr Instance 'get set' : 
+    Derived* NativePtr 'get set' : 
+  Methods:
+    get_NativePtr(): PrivateScope, Public, HideBySig, SpecialName
+    set_NativePtr(Derived*): PrivateScope, Public, HideBySig, SpecialName
+    get_Instance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Instance(IntPtr): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Basic.BasicBasic: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    unsafeFunction(Bar, IntPtr, Action`1): PrivateScope, Public, Static, HideBySig
+    indirectReturn(): PrivateScope, Public, Static, HideBySig
+Struct Basic.Enum: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Basic.Enum A = 0 : Public, Static, Literal, HasDefault
+    Basic.Enum B = 2 : Public, Static, Literal, HasDefault
+    Basic.Enum C = 5 : Public, Static, Literal, HasDefault
+    Basic.Enum D = -2147483648 : Public, Static, Literal, HasDefault
+    Basic.Enum E = 1 : Public, Static, Literal, HasDefault
+    Basic.Enum F = -9 : Public, Static, Literal, HasDefault

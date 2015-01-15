@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NAlpc</name>
+    </assembly>
+    <members>
+        <member name="F:NAlpc.UNICODE_STRING.Length">
+            USHORT->unsigned short
+        </member>
+        <member name="F:NAlpc.UNICODE_STRING.MaximumLength">
+            USHORT->unsigned short
+        </member>
+        <member name="F:NAlpc.UNICODE_STRING.Buffer">
+            PWSTR->WCHAR*
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.Length">
+            ULONG->unsigned int
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.RootDirectory">
+            HANDLE->void*
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.ObjectName">
+            PUNICODE_STRING->_UNICODE_STRING*
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.Attributes">
+            ULONG->unsigned int
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.SecurityDescriptor">
+            PVOID->void*
+        </member>
+        <member name="F:NAlpc.OBJECT_ATTRIBUTES.SecurityQualityOfService">
+            PVOID->void*
+        </member>
+        <member name="T:NAlpc.AlpcTransport">
+            ALPC for Windows
+        </member>
+        <member name="T:NAlpc.REMOTE_PORT_VIEW">
+            <summary>
+            Define structure for shared memory coming from remote side of the port
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtCreatePort(NAlpc.AlpcPortHandle@,NAlpc.OBJECT_ATTRIBUTES@,System.UInt32,System.UInt32,System.UInt32)" -->
+        <member name="M:NAlpc.NativeMethods.NtListenPort(NAlpc.AlpcPortHandle,NAlpc.PORT_MESSAGE@)">
+            <summary>
+                Listens on a port for a connection request message on the server side.
+                PortHandle - A handle to a port object. The handle doesn't need to grant any specific access.
+                ConnectionRequest - Points to a caller-allocated buffer or variable that receives the connect message sent to the port.
+             </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtAcceptConnectPort(NAlpc.AlpcPortHandle@,System.IntPtr,NAlpc.PORT_MESSAGE@,System.Boolean,System.IntPtr,System.IntPtr)" -->
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtConnectPort(NAlpc.AlpcPortHandle@,System.String,NAlpc.SECURITY_QUALITY_OF_SERVICE@,System.IntPtr@,System.IntPtr@,System.UInt32@,System.IntPtr@,System.IntPtr@)" -->
+        <member name="M:NAlpc.NativeMethods.NtCompleteConnectPort(NAlpc.AlpcPortHandle)">
+            <summary>
+                Completes the port connection process on the server side.
+                PortHandle - A handle to a port object. The handle doesn't need 
+                    to grant any specific access.
+             </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtRequestPort(NAlpc.AlpcPortHandle,NAlpc.PORT_MESSAGE@)" -->
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtRequestWaitReplyPort(NAlpc.AlpcPortHandle,NAlpc.PORT_MESSAGE@,NAlpc.PORT_MESSAGE@)" -->
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtReplyPort(NAlpc.AlpcPortHandle,NAlpc.PORT_MESSAGE@)" -->
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtReplyWaitReplyPort(NAlpc.AlpcPortHandle,NAlpc.PORT_MESSAGE@)" -->
+        <!-- Badly formed XML comment ignored for member "M:NAlpc.NativeMethods.NtReplyWaitReceivePort(NAlpc.AlpcPortHandle,System.IntPtr@,NAlpc.PORT_MESSAGE@,NAlpc.PORT_MESSAGE@)" -->
+        <member name="F:NAlpc.Constants.MAX_LPC_DATA">
+            <summary>
+            Maximum number of bytes that can be copied through LPC
+            </summary>
+        </member>
+        <member name="F:NAlpc.CLIENT_ID.UniqueProcess">
+            HANDLE->void*
+        </member>
+        <member name="F:NAlpc.CLIENT_ID.UniqueThread">
+            HANDLE->void*
+        </member>
+        <member name="T:NAlpc.PORT_VIEW">
+            <summary>
+            Define structure for initializing shared memory on the caller's side of the port
+            </summary>
+        </member>
+        <member name="M:NAlpc.PORT_MESSAGE.InitializeMessageHeader(NAlpc.PORT_MESSAGE,System.UInt16,NAlpc.PORT_MESSAGE_TYPES)">
+            <summary>
+            Macro for initializing the message header
+            </summary>
+            <param name="ph"></param>
+            <param name="l"></param>
+            <param name="t"></param>
+        </member>
+        <member name="F:NAlpc.PORT_MESSAGE.s1_struct.DataLength">
+            <summary>
+            Length of data following the header (bytes)
+            </summary>
+        </member>
+        <member name="F:NAlpc.PORT_MESSAGE.s1_struct.TotalLength">
+            <summary>
+             Length of data + sizeof(PORT_MESSAGE)
+            </summary>
+        </member>
+        <member name="F:G.Constants.MAX_LPC_DATA">
+            MAX_LPC_DATA -> 0x130
+        </member>
+        <member name="F:G.Constants.LPC_REQUEST">
+            LPC_REQUEST -> 1
+        </member>
+        <member name="F:G.Constants.LPC_REPLY">
+            LPC_REPLY -> 2
+        </member>
+        <member name="F:G.Constants.LPC_DATAGRAM">
+            LPC_DATAGRAM -> 3
+        </member>
+        <member name="F:G.Constants.LPC_LOST_REPLY">
+            LPC_LOST_REPLY -> 4
+        </member>
+        <member name="F:G.Constants.LPC_PORT_CLOSED">
+            LPC_PORT_CLOSED -> 5
+        </member>
+        <member name="F:G.Constants.LPC_CLIENT_DIED">
+            LPC_CLIENT_DIED -> 6
+        </member>
+        <member name="F:G.Constants.LPC_EXCEPTION">
+            LPC_EXCEPTION -> 7
+        </member>
+        <member name="F:G.Constants.LPC_DEBUG_EVENT">
+            LPC_DEBUG_EVENT -> 8
+        </member>
+        <member name="F:G.Constants.LPC_ERROR_EVENT">
+            LPC_ERROR_EVENT -> 9
+        </member>
+        <member name="F:G.Constants.LPC_CONNECTION_REQUEST">
+            LPC_CONNECTION_REQUEST -> 10
+        </member>
+        <member name="F:G.Constants.ALPC_REQUEST">
+            ALPC_REQUEST -> 0x2000 | LPC_REQUEST
+        </member>
+        <member name="F:G.Constants.ALPC_CONNECTION_REQUEST">
+            ALPC_CONNECTION_REQUEST -> 0x2000 | LPC_CONNECTION_REQUEST
+        </member>
+        <member name="F:G.Constants.InitializeMessageHeader">
+             Warning: Generation of Method Macros is not supported at this time
+             InitializeMessageHeader -> "(ph,l,t) {                                                                      
+                (ph)->u1.s1.TotalLength      = (USHORT)(l);                        
+                (ph)->u1.s1.DataLength       = (USHORT)(l - sizeof(PORT_MESSAGE)); 
+                (ph)->u2.s2.Type             = (USHORT)(t);                        
+                (ph)->u2.s2.DataInfoOffset   = 0;                                  
+                (ph)->ClientId.UniqueProcess = NULL;                               
+                (ph)->ClientId.UniqueThread  = NULL;                               
+                (ph)->MessageId              = 0;                                  
+                (ph)->ClientViewSize         = 0;                                  
+            }"
+        </member>
+        <member name="F:G.CLIENT_ID.UniqueProcess">
+            HANDLE->void*
+        </member>
+        <member name="F:G.CLIENT_ID.UniqueThread">
+            HANDLE->void*
+        </member>
+        <member name="F:G.Anonymous_75329b3c_d2b1_43f5_8a3b_7343e032056e.DataLength">
+            USHORT->unsigned short
+        </member>
+        <member name="F:G.Anonymous_75329b3c_d2b1_43f5_8a3b_7343e032056e.TotalLength">
+            USHORT->unsigned short
+        </member>
+        <member name="F:G.Anonymous_09726424_1cd5_4946_8a36_006f5960a44d.s1">
+            Anonymous_75329b3c_d2b1_43f5_8a3b_7343e032056e
+        </member>
+        <member name="F:G.Anonymous_09726424_1cd5_4946_8a36_006f5960a44d.Length">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.Anonymous_d1bcb9b5_d820_4940_8507_634538410a70.Type">
+            USHORT->unsigned short
+        </member>
+        <member name="F:G.Anonymous_d1bcb9b5_d820_4940_8507_634538410a70.DataInfoOffset">
+            USHORT->unsigned short
+        </member>
+        <member name="F:G.Anonymous_bef29820_2d56_4737_8b7e_13e28f15d6ba.s2">
+            Anonymous_d1bcb9b5_d820_4940_8507_634538410a70
+        </member>
+        <member name="F:G.Anonymous_bef29820_2d56_4737_8b7e_13e28f15d6ba.ZeroInit">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.Anonymous_a5008fdd_7b56_4347_91f7_6ec9ca421a6a.ClientId">
+            CLIENT_ID->_CLIENT_ID
+        </member>
+        <member name="F:G.Anonymous_a5008fdd_7b56_4347_91f7_6ec9ca421a6a.DoNotUseThisField">
+            double
+        </member>
+        <member name="F:G.Anonymous_2b34ce8d_4bbc_4eae_b342_a6e119b0ae42.ClientViewSize">
+            ULONG_PTR->unsigned int
+        </member>
+        <member name="F:G.Anonymous_2b34ce8d_4bbc_4eae_b342_a6e119b0ae42.CallbackId">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.PORT_MESSAGE.u1">
+            Anonymous_09726424_1cd5_4946_8a36_006f5960a44d
+        </member>
+        <member name="F:G.PORT_MESSAGE.u2">
+            Anonymous_bef29820_2d56_4737_8b7e_13e28f15d6ba
+        </member>
+        <member name="F:G.PORT_MESSAGE.Union1">
+            Anonymous_a5008fdd_7b56_4347_91f7_6ec9ca421a6a
+        </member>
+        <member name="F:G.PORT_MESSAGE.MessageId">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.PORT_MESSAGE.Union2">
+            Anonymous_2b34ce8d_4bbc_4eae_b342_a6e119b0ae42
+        </member>
+        <member name="F:G.PORT_VIEW.Length">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.PORT_VIEW.SectionHandle">
+            HANDLE->void*
+        </member>
+        <member name="F:G.PORT_VIEW.SectionOffset">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.PORT_VIEW.ViewSize">
+            SIZE_T->ULONG_PTR->unsigned int
+        </member>
+        <member name="F:G.PORT_VIEW.ViewBase">
+            PVOID->void*
+        </member>
+        <member name="F:G.PORT_VIEW.ViewRemoteBase">
+            PVOID->void*
+        </member>
+        <member name="F:G.REMOTE_PORT_VIEW.Length">
+            ULONG->unsigned int
+        </member>
+        <member name="F:G.REMOTE_PORT_VIEW.ViewSize">
+            SIZE_T->ULONG_PTR->unsigned int
+        </member>
+        <member name="F:G.REMOTE_PORT_VIEW.ViewBase">
+            PVOID->void*
+        </member>
+        <member name="F:G.SECURITY_QUALITY_OF_SERVICE.Length">
+            DWORD->unsigned int
+        </member>
+        <member name="F:G.SECURITY_QUALITY_OF_SERVICE.ImpersonationLevel">
+            SECURITY_IMPERSONATION_LEVEL->_SECURITY_IMPERSONATION_LEVEL
+        </member>
+        <member name="F:G.SECURITY_QUALITY_OF_SERVICE.ContextTrackingMode">
+            SECURITY_CONTEXT_TRACKING_MODE->BOOLEAN->BYTE->unsigned char
+        </member>
+        <member name="F:G.SECURITY_QUALITY_OF_SERVICE.EffectiveOnly">
+            BOOLEAN->BYTE->unsigned char
+        </member>
+        <member name="M:G.NativeMethods.NtCreatePort(System.IntPtr@,NAlpc.OBJECT_ATTRIBUTES@,System.UInt32,System.UInt32,System.UInt32)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            ObjectAttributes: POBJECT_ATTRIBUTES->_OBJECT_ATTRIBUTES*
+            MaxConnectionInfoLength: ULONG->unsigned int
+            MaxMessageLength: ULONG->unsigned int
+            MaxPoolUsage: ULONG->unsigned int
+        </member>
+        <member name="M:G.NativeMethods.ZwCreatePort(System.IntPtr@,NAlpc.OBJECT_ATTRIBUTES@,System.UInt32,System.UInt32,System.UInt32)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            ObjectAttributes: POBJECT_ATTRIBUTES->_OBJECT_ATTRIBUTES*
+            MaxConnectionInfoLength: ULONG->unsigned int
+            MaxMessageLength: ULONG->unsigned int
+            MaxPoolUsage: ULONG->unsigned int
+        </member>
+        <member name="M:G.NativeMethods.NtConnectPort(System.IntPtr@,NAlpc.UNICODE_STRING@,G.SECURITY_QUALITY_OF_SERVICE@,G.PORT_VIEW@,G.REMOTE_PORT_VIEW@,System.UInt32@,System.IntPtr,System.UInt32@)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            PortName: PUNICODE_STRING->_UNICODE_STRING*
+            SecurityQos: PSECURITY_QUALITY_OF_SERVICE->_SECURITY_QUALITY_OF_SERVICE*
+            ClientView: PPORT_VIEW->_PORT_VIEW*
+            ServerView: PREMOTE_PORT_VIEW->_REMOTE_PORT_VIEW*
+            MaxMessageLength: PULONG->ULONG*
+            ConnectionInformation: PVOID->void*
+            ConnectionInformationLength: PULONG->ULONG*
+        </member>
+        <member name="M:G.NativeMethods.ZwConnectPort(System.IntPtr@,NAlpc.UNICODE_STRING@,G.SECURITY_QUALITY_OF_SERVICE@,G.PORT_VIEW@,G.REMOTE_PORT_VIEW@,System.UInt32@,System.IntPtr,System.UInt32@)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            PortName: PUNICODE_STRING->_UNICODE_STRING*
+            SecurityQos: PSECURITY_QUALITY_OF_SERVICE->_SECURITY_QUALITY_OF_SERVICE*
+            ClientView: PPORT_VIEW->_PORT_VIEW*
+            ServerView: PREMOTE_PORT_VIEW->_REMOTE_PORT_VIEW*
+            MaxMessageLength: PULONG->ULONG*
+            ConnectionInformation: PVOID->void*
+            ConnectionInformationLength: PULONG->ULONG*
+        </member>
+        <member name="M:G.NativeMethods.NtListenPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwListenPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.NtAcceptConnectPort(System.IntPtr@,System.IntPtr,G.PORT_MESSAGE@,System.Byte,G.PORT_VIEW@,G.REMOTE_PORT_VIEW@)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            PortContext: PVOID->void*
+            ConnectionRequest: PPORT_MESSAGE->_PORT_MESSAGE*
+            AcceptConnection: BOOLEAN->BYTE->unsigned char
+            ServerView: PPORT_VIEW->_PORT_VIEW*
+            ClientView: PREMOTE_PORT_VIEW->_REMOTE_PORT_VIEW*
+        </member>
+        <member name="M:G.NativeMethods.ZwAcceptConnectPort(System.IntPtr@,System.IntPtr,G.PORT_MESSAGE@,System.Byte,G.PORT_VIEW@,G.REMOTE_PORT_VIEW@)">
+             Return Type: NTSTATUS->int
+            PortHandle: PHANDLE->HANDLE*
+            PortContext: PVOID->void*
+            ConnectionRequest: PPORT_MESSAGE->_PORT_MESSAGE*
+            AcceptConnection: BOOLEAN->BYTE->unsigned char
+            ServerView: PPORT_VIEW->_PORT_VIEW*
+            ClientView: PREMOTE_PORT_VIEW->_REMOTE_PORT_VIEW*
+        </member>
+        <member name="M:G.NativeMethods.NtCompleteConnectPort(System.IntPtr)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+        </member>
+        <member name="M:G.NativeMethods.ZwCompleteConnectPort(System.IntPtr)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+        </member>
+        <member name="M:G.NativeMethods.NtRequestPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwRequestPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.NtRequestWaitReplyPort(System.IntPtr,G.PORT_MESSAGE@,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwRequestWaitReplyPort(System.IntPtr,G.PORT_MESSAGE@,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            RequestMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.NtReplyPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwReplyPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.NtReplyWaitReplyPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwReplyWaitReplyPort(System.IntPtr,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.NtReplyWaitReceivePort(System.IntPtr,System.IntPtr@,G.PORT_MESSAGE@,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            PortContext: PVOID*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+            ReceiveMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+        <member name="M:G.NativeMethods.ZwReplyWaitReceivePort(System.IntPtr,System.IntPtr@,G.PORT_MESSAGE@,G.PORT_MESSAGE@)">
+             Return Type: NTSTATUS->int
+            PortHandle: HANDLE->void*
+            PortContext: PVOID*
+            ReplyMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+            ReceiveMessage: PPORT_MESSAGE->_PORT_MESSAGE*
+        </member>
+    </members>
+</doc>

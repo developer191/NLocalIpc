@@ -1,0 +1,13 @@
+h:\src\NDceRpc\build\Debug\NAlpc.pdb
+h:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.pdb
+K:\src\NDceRpc\build\Debug\NAlpc.exe
+K:\src\NDceRpc\build\Debug\NAlpc.pdb
+K:\src\NDceRpc\src\NAlpc\obj\x86\Debug\ResolveAssemblyReference.cache
+K:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.exe
+K:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.pdb
+h:\src\NDceRpc\build\Debug\NAlpc.dll
+h:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.dll
+I:\src\NDceRpc\build\Debug\NAlpc.dll
+I:\src\NDceRpc\build\Debug\NAlpc.pdb
+I:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.dll
+I:\src\NDceRpc\src\NAlpc\obj\x86\Debug\NAlpc.pdb

@@ -1,0 +1,5 @@
+h:\src\NDceRpc\build\Release\NAlpc.pdb
+h:\src\NDceRpc\src\NAlpc\obj\x86\Release\NAlpc.pdb
+H:\src\NDceRpc\build\Release\NAlpc.XML
+H:\src\NDceRpc\build\Release\NAlpc.dll
+H:\src\NDceRpc\src\NAlpc\obj\x86\Release\NAlpc.dll

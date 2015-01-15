@@ -1,0 +1,13 @@
+i:\src\NDceRpc_\src\NAlpc\bin\Debug\NAlpc.dll
+i:\src\NDceRpc_\src\NAlpc\bin\Debug\NAlpc.pdb
+i:\src\NDceRpc_\src\NAlpc\obj\Debug\NAlpc.dll
+i:\src\NDceRpc_\src\NAlpc\obj\Debug\NAlpc.pdb
+i:\src\NDceRpc\src\NAlpc\bin\Debug\NAlpc.dll
+i:\src\NDceRpc\src\NAlpc\bin\Debug\NAlpc.pdb
+i:\src\NDceRpc\src\NAlpc\obj\Debug\NAlpc.dll
+i:\src\NDceRpc\src\NAlpc\obj\Debug\NAlpc.pdb
+i:\src\NDceRpc\src\NAlpc\obj\Debug\NAlpc.csprojResolveAssemblyReference.cache
+i:\src\NLocalIpc\src\NAlpc\bin\Debug\NAlpc.dll
+i:\src\NLocalIpc\src\NAlpc\bin\Debug\NAlpc.pdb
+i:\src\NLocalIpc\src\NAlpc\obj\Debug\NAlpc.dll
+i:\src\NLocalIpc\src\NAlpc\obj\Debug\NAlpc.pdb
