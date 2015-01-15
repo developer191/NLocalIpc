@@ -1,8 +1,0 @@
-﻿  stdafx.cpp
-  rpcrtex.cpp
-rpcrtex.def(1): warning LNK4017: EXPORT statement not supported for the target platform; ignored
-     Creating library I:\src\NLocalIpc\src\..\build\Debug\alpc.lib and object I:\src\NLocalIpc\src\..\build\Debug\alpc.exp
-  rpcrtex.vcxproj -> I:\src\NLocalIpc\src\..\build\Debug\alpc.dll
-rpcrtex.def(1): warning LNK4017: EXPORT statement not supported for the target platform; ignored
-     Creating library I:\src\NLocalIpc\src\..\build\Debug\alpc.lib and object I:\src\NLocalIpc\src\..\build\Debug\alpc.exp
-  rpcrtex.vcxproj -> I:\src\NLocalIpc\src\..\build\Debug\alpc.dll
